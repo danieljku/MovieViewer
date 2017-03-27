@@ -46,14 +46,15 @@ class MoviesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toMovieDetailVC"{
             let indexPath = moviesTableView.indexPathForSelectedRow
-            let currentCell = moviesTableView.cellForRow(at: indexPath!) as! MoviesTableViewCell!
+            let currentCell = moviesTableView.cellForRow(at: indexPath!) as! MoviesTableViewCell
             
             let movieDetailVC = segue.destination as! MovieDetailViewController
             
-            movieDetailVC.movie = currentCell?.movie
+            movieDetailVC.movie = currentCell.movie
         }
     }
 }
+
 
 extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

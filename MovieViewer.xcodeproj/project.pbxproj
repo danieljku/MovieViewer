@@ -67,9 +67,9 @@
 		127995031E824FE80005CE35 /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				127995181E8332110005CE35 /* Models */,
 				1279951A1E83321D0005CE35 /* Views */,
 				127995191E8332170005CE35 /* View Controllers */,
-				127995181E8332110005CE35 /* Models */,
 				127995041E824FE80005CE35 /* AppDelegate.swift */,
 				127995081E824FE90005CE35 /* Main.storyboard */,
 				1279950B1E824FE90005CE35 /* Assets.xcassets */,
