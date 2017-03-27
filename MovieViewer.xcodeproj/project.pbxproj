@@ -370,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9417FA3896FA8D613A065E50 /* Pods-MovieViewer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J7EDPJR4N6;
 				INFOPLIST_FILE = MovieViewer/Info.plist;
@@ -384,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DB8847F35D459765600219D /* Pods-MovieViewer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J7EDPJR4N6;
 				INFOPLIST_FILE = MovieViewer/Info.plist;

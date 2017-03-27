@@ -24,9 +24,10 @@ class Movies: NSObject {
             title = movieTitle["label"] as? String
         }
         
-        let imageArray = movie["im:image"] as! NSArray
-        if let url = imageArray.object(at: 2) as? NSDictionary {
-            posterURL = url["label"] as? String
+        if let imageArray = movie["im:image"] as? NSArray {
+            if let url = imageArray.object(at: 2) as? NSDictionary {
+                posterURL = url["label"] as? String
+            }
         }
         
         if let movieSummary = movie["summary"] as? NSDictionary {
@@ -41,10 +42,11 @@ class Movies: NSObject {
             rentPrice = movieRentPrice["label"] as? String
         }
         
-        let links = movie["link"] as? NSArray
-        if let movieDetailLink = links?.object(at: 0) as? NSDictionary {
-            if let attributes = movieDetailLink["attributes"] as? NSDictionary {
-                link = attributes["href"] as? String
+        if let links = movie["link"] as? NSArray {
+            if let movieDetailLink = links.object(at: 0) as? NSDictionary {
+                if let attributes = movieDetailLink["attributes"] as? NSDictionary {
+                    link = attributes["href"] as? String
+                }
             }
         }
         
